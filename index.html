@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora-container">
+        <div class="display" id="resultado"></div>
+        <div class="keys">
+            <button id="clean" onclick="clean()">C</button>
+            <button class='operador' id="resto" onclick="insert('%')" >+/-</button>
+            <button class='operador' id="porcentagem" onclick="insert('/')">%</button>
+            <button class='operador' id="operator-adicao" onclick="insert('/')">÷</button>
+            <button class='operador' onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button class='operador' id="operator-adicao" onclick="insert('*')">x</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button class='operador' id="operator-adicao" onclick="insert('-')">-</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button class='operador' id="operator-adicao" onclick="insert('+')">+</button>
+        </div>
+        <div id="flex">
+            <button class="zero" onclick="insert('0')" style="padding: 13px; width: 136px">0</button>
+            <br>
+            <button id="ponto" onclick="insert('.')">,</button>
+            <button id="key-chave" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
